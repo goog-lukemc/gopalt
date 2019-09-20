@@ -1,4 +1,4 @@
-package cbtypes
+package types
 
 // FirestoreEvent is the payload of a Firestore event.
 type FirestoreEvent struct {

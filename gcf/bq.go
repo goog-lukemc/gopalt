@@ -1,4 +1,4 @@
-package eventapp
+package gcf
 
 import (
 	"context"
