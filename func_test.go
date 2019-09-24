@@ -11,6 +11,7 @@ import (
 )
 
 func TestEventToBq(t *testing.T) {
+
 	meta := metadata.Metadata{
 		EventID:   "abc1234",
 		Timestamp: time.Now(),
@@ -31,7 +32,7 @@ func TestEventToBq(t *testing.T) {
 	ctx := metadata.NewContext(context.Background(), &meta)
 	err := FsToBq(ctx, sess)
 	if err != nil {
-		t.Fatalf("%+v", err.Error())
+		t.Fatalf("%+v", err)
 	}
 
 }
